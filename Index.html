@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    
+    <title>Library</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fa fa-book" aria-hidden="true"></i> Library </h1>
+        </div>
+    </header>
+    <main>
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <form id="book-form">
+                    <div class="form-group">
+                        <input type="text" id="title" placeholder="Title" required class="input">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="author" placeholder="Author" required class="input">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="pages" placeholder="Number of Pages" required max="999" class="input">
+                    </div>
+                    <div id="checkbox">
+                        <p><label>Have you read the book?</label><input type="checkbox" id="isRead" name="isRead"></p>
+                    </div>
+                    <div class="button-submit">
+                        <button type="submit" class="btn2" id="addBtn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button type="submit" value="Add Book" class="btn" id="myBtn">+ New Book</button>
+        <div class="books-grid" id="booksGrid">
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js" defer></script>
+</html>
